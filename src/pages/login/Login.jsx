@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         color: '#ED3237',
         borderRadius: 10,
-        backgroundColor: 'white',
+        backgroundColor: '#F4F4F4',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginBottom: '11vh'
+        marginBottom: '11vh',
     },
     avatar: {
         color: '#ED3237',
