@@ -1,0 +1,37 @@
+
+ .container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+input[type=search]{
+    border: 1px solid #ED3237;
+    width: 354px;
+    padding:16px;
+    outline:none;  
+    font-weight: 500 !important;
+}
+ .entrega input{
+    padding:5px 5px !important; 
+    font-weight: bold !important;
+    color:#656363 !important;
+    font-size:12px !important;
+ }
+.entrega{
+    border-radius: 4px !important;
+    border:none;
+    padding: 5px 0px !important;
+}
+.entrega label{
+    color: #ED3237 !important;  
+    padding: 0px 8px;
+    font-weight: 600 !important;
+}
+
+
+.MuiInput-underline:before {
+    border:none !important;
+}
+.MuiInput-underline:after {
+    border:none !important;
+}
