@@ -6,6 +6,8 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Button from '@material-ui/core/Button';
 
+import { useCount } from '../context/Count';
+
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
 
@@ -18,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         height: '80px',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     logo: {
         display: 'flex',
@@ -45,11 +47,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header() {
+    const { count } = useCount();
+
     const classes = useStyles();
     const enderecos = [
         { title: 'R. Antonio Braune, 222' },
         { title: 'R. Augusta, 254' },
     ];
+
 
     return (
         <div className={classes.root} >
@@ -77,7 +82,8 @@ export default function Header() {
                     <Button style={{ color: 'red', fontSize: 12 }} href="http://localhost:3000/login">Entrar</Button>
                 </div>
                 <div className={classes.button}>
-                    <ShoppingCartOutlinedIcon style={{ color: 'red', fontSize: 28 }} />
+                    <ShoppingCartOutlinedIcon style={{ color: 'red', fontSize: 28, marginRight: 0, margin: 0 }} />
+                    <div style={{ backgroundColor: '#F09035', width: '22px', height: '23px', borderRadius: '50%', marginRight: '0px', marginBottom: '30px', marginLeft: '0px', paddingLeft: 7 }}>{count}</div>
                     <Button style={{ color: 'red', fontSize: 12 }}>Carrinho</Button>
                 </div>
             </div >

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom"
 
-import Produto from './pages/produto/Produto'
 import Login from './pages/login/Login'
+import Compra from './pages/compra/Compra'
 
 const Routes = () => {
     return (
         <Switch>
-            <Route path="/produto" component={Produto} />
+            <Route path="/compra" component={Compra} />
             <Route path="/login" component={Login} />
-            <Redirect from="*" to='produto' />
+            <Redirect from="*" to='compra' />
         </Switch>
     )
 }
