@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'row',
         alignItems: 'center',
         marginBottom: 0
+    },
+    img: {
+        marginLeft: 70
     }
 }));
 
@@ -54,7 +57,7 @@ export default function Produto() {
                 </div>
                 <div className={classes.price}>
                     <div style={{ color: '#DC6E05' }}>R$31,99</div>
-                    <div style={{ textDecoration: 'line-through', margin: '0px 17px' }}>R$34,95</div>
+                    <div style={{ textDecoration: 'line-through #4E4E4E', color: '#4E4E4E', margin: '0px 17px' }}>R$34,95</div>
                 </div>
             </div>
             <Menu />
