@@ -72,6 +72,7 @@ export default function Header() {
                         getOptionLabel={(option) => option.title}
                         closeIcon={false}
                         renderInput={(params) => <TextField {...params} label="Entrega:" variant="standard" />}
+
                     />
                 </div>
                 <div className={classes.input} >
@@ -83,7 +84,7 @@ export default function Header() {
                 </div>
                 <div className={classes.button}>
                     <ShoppingCartOutlinedIcon style={{ color: 'red', fontSize: 28, marginRight: 0, margin: 0 }} />
-                    <div style={{ backgroundColor: '#F09035', width: '22px', height: '23px', borderRadius: '50%', marginRight: '0px', marginBottom: '30px', marginLeft: '0px', paddingLeft: 7 }}>{count}</div>
+                    <div style={{ backgroundColor: '#F09035', borderRadius: '50%', widht: '520%', height: '50%', marginRight: '0px', marginBottom: '30px', marginLeft: '0px', padding: 1, paddingLeft: 8, paddingRight: 8 }}>{count}</div>
                     <Button style={{ color: 'red', fontSize: 12 }}>Carrinho</Button>
                 </div>
             </div >

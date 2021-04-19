@@ -17,16 +17,16 @@ const useStyles = makeStyles((theme) => ({
     paper: {
         color: '#ED3237',
         borderRadius: 10,
-        backgroundColor: '#F4F4F4',
+        backgroundColor: 'rgba(253, 215, 14, 0.2)',
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         marginBottom: '11vh',
+        padding: '15px'
     },
     avatar: {
         color: '#ED3237',
-        marginTop: 15,
-        padding: 5,
+        padding: 3,
         fontSize: 50
     },
     form: {
@@ -39,9 +39,6 @@ const useStyles = makeStyles((theme) => ({
     submit: {
         margin: theme.spacing(2, 0, 2),
         backgroundColor: '#F09035',
-    },
-    principal: {
-
     },
     forgot: {
         color: '#F09035'
@@ -97,18 +94,17 @@ export default function Login() {
                             fullWidth
                             variant="contained"
                             color="primary"
-                            className={classes.submit}
-                        >
+                            className={classes.submit} >
                             Entrar
                         </Button>
                         <Grid container className={classes.forgot}>
                             <Grid item xs >
-                                <Link href="/home" variant="body2" className={classes.forgot}>
+                                <Link href="/compra" variant="body2" className={classes.forgot}>
                                     Esqueceu a senha?
                                  </Link>
                             </Grid>
                             <Grid item>
-                                <Link href="/home" variant="body2" className={classes.forgot}>
+                                <Link href="/compra" variant="body2" className={classes.forgot}>
                                     {"Não tem conta? Se registre!"}
                                 </Link>
                             </Grid>
