@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '24px',
         marginLeft: '64px',
         paddingBottom: '10px',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             marginLeft: '25px',
         }
     },
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 400,
         color: '#4E4E4E',
         margin: '24px 0px',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: '22px',
             fontWeight: 470,
         }
@@ -39,14 +39,14 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'row',
         alignItems: 'center',
         marginBottom: 0,
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: '22px',
             fontWeight: 500,
         }
     },
     img: {
         marginLeft: 70,
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             marginLeft: 42
         }
     }

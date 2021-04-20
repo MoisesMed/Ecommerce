@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #686868',
         borderRadius: '8px',
         margin: '0px 100px',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             border: '0px solid #686868',
         }
     },
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         width: '375px',
         height: '800px',
         overflow: 'hidden',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             overflow: 'visible',
             width: '520px'
         }
@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '1px solid #E8A634',
         margin: '10px 10px',
         overflow: 'hidden',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             width: '500px'
         }
     },
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '14px',
         fontWeight: 500,
         color: '#4E4E4E',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 17
         }
     },
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '12px',
         fontWeight: 400,
         color: '#E49700',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 13
         }
     },
@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             height: "36",
             width: '95px',
             marginLeft: 380
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '14px',
         fontWeight: 500,
         color: '#4E4E4E',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 17
         }
     },
@@ -91,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '14px',
         fontWeight: 400,
         color: '#F09035',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 17
         }
     },
@@ -99,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '14px',
         fontWeight: 500,
         color: '#4E4E4E',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 17
         }
     },
@@ -126,7 +126,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             height: "36",
             width: '95px',
             marginLeft: 380
@@ -142,7 +142,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             width: '200px',
             height: '50px',
             fontSize: '20px'
@@ -155,7 +155,7 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         marginLeft: 16,
         fontSize: 14,
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             width: '300px',
             height: '50px',
             fontSize: '16px'
@@ -171,7 +171,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '16px',
         fontWeight: 400,
         color: '#4E4E4E',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             fontSize: 17
         }
     }

@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        '@media (max-width:450px)': {
-            width: '560px',
+        '@media (max-width:500px)': {
+            width: '620px',
             justifyContent: 'center',
         }
 
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     buttons: {
         display: 'flex',
         alignItems: 'center',
-        '@media (max-width:450px)': {
+        '@media (max-width:500px)': {
             display: 'none',
             width: '0%'
         }
