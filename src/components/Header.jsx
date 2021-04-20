@@ -21,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        '@media (max-width:350px)': {
+        '@media (max-width:450px)': {
             width: '560px',
             justifyContent: 'center',
         }
+
     },
     logo: {
         display: 'flex',
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     buttons: {
         display: 'flex',
         alignItems: 'center',
-        '@media (max-width:350px)': {
+        '@media (max-width:450px)': {
             display: 'none',
             width: '0%'
         }

@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '24px',
         marginLeft: '64px',
         paddingBottom: '10px',
-        '@media (max-width:350px)': {
+        '@media (max-width:450px)': {
             marginLeft: '25px',
         }
     },
@@ -26,9 +26,9 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 400,
         color: '#4E4E4E',
         margin: '24px 0px',
-        '@media (max-width:350px)': {
+        '@media (max-width:450px)': {
             fontSize: '22px',
-            fontWeight: 430,
+            fontWeight: 470,
         }
     },
     price: {
@@ -39,15 +39,15 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'row',
         alignItems: 'center',
         marginBottom: 0,
-        '@media (max-width:350px)': {
+        '@media (max-width:450px)': {
             fontSize: '22px',
             fontWeight: 500,
         }
     },
     img: {
         marginLeft: 70,
-        '@media (max-width:350px)': {
-            marginLeft: 45
+        '@media (max-width:450px)': {
+            marginLeft: 42
         }
     }
 }));
@@ -70,7 +70,7 @@ export default function Produto() {
                 </div>
                 <div className={classes.price}>
                     <div style={{ color: '#DC6E05' }}>R$31,99</div>
-                    <div style={{ textDecoration: 'line-through #4E4E4E', color: '#4E4E4E', margin: '0px 17px' }}>R$34,95</div>
+                    <div style={{ textDecoration: 'line-through #4E4E4E', color: '#4E4E4E', margin: '0px 25px' }}>R$34,95</div>
                 </div>
             </div>
             <Menu />
