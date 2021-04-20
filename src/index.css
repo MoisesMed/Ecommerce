@@ -11,15 +11,9 @@ body {
     justify-content: center;
     width:600px;
     padding-bottom:120px;
-    zoom:0;
   }
 }
 
-@media screen and (max-width: 450px) {
-  * {
-    zoom:0;
-  }
-}
 
 *{
     width:auto;
