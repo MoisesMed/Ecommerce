@@ -6,11 +6,19 @@ body {
 }
 @media screen and (max-width: 450px) {
   .divMain {
+    overflow-x:hidden;
+    overflow-x:hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width:600px;
     padding-bottom:120px;
+  }
+}
+@media screen and (max-width: 450px) {
+  * {
+    overflow-x:hidden;
+    overflow-x:hidden:
   }
 }
 *{
