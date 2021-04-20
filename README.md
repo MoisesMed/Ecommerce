@@ -1,3 +1,7 @@
+<h2>O que é este projeto?</h2>
+<p>Projeto desenvolvido para vaga de estágio na TeamSoft.</p>
+
+
 <h2>Sobre o desenvolvimento</h2>
 
 <p>Para o desenvolvimento do projeto foi disponibilizado um modelo que deveriamos seguir.</p>
