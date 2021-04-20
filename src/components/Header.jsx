@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'space-between',
         '@media (max-width:500px)': {
-            width: 'auto',
+            width: '560px',
             justifyContent: 'center',
         }
 
