@@ -8,8 +8,10 @@ import Button from '@material-ui/core/Button';
 
 import { useCount } from '../context/Count';
 
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
+import Popover from './Popover'
 
 import './Header.css'
 
@@ -52,6 +54,15 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 15,
         borderRadius: '4px',
         color: 'red'
+    },
+    arrow: {
+        display: 'none',
+        '@media (max-width:500px)': {
+            display: 'flex',
+            color: '#686868',
+            alignItems: 'center',
+            marginRight: '500px'
+        }
     }
 }));
 
@@ -67,9 +78,12 @@ export default function Header() {
 
     return (
         <div className={classes.root} >
-            <div className={classes.logo}>
-                <a href="http://localhost:3000/home"><img src={logo_esquerda} /></a>
-                <a href="http://localhost:3000/home"><img src={logo_direita} /></a>
+            <div >
+                <a className={classes.arrow} href="/home"><ArrowBackIosIcon /> </a>
+            </div>
+            <div className={classes.logo} style={{ position: 'absolute' }}>
+                <a href="/home"><img src={logo_esquerda} /></a>
+                <a href="/home"><img src={logo_direita} /></a>
             </div>
             <div class="root1" className={classes.buttons}>
                 <div className={classes.button}>
@@ -89,10 +103,12 @@ export default function Header() {
                 </div >
                 <div className={classes.button}>
                     <AccountCircleOutlinedIcon fontSize="50px" style={{ color: 'red', fontSize: 28 }} />
-                    <Button style={{ color: 'red', fontSize: 12 }} href="http://localhost:3000/login">Entrar</Button>
+                    <Button style={{ color: 'red', fontSize: 12 }} href="/home">Entrar</Button>
                 </div>
                 <div className={classes.button}>
                     <ShoppingCartOutlinedIcon style={{ color: 'red', fontSize: 28, marginRight: 0, margin: 0 }} />
+
+                    <Popover></Popover>
                     <div style={{ backgroundColor: '#F09035', borderRadius: '50%', widht: '50%', height: '50%', marginRight: '0px', marginBottom: '30px', marginLeft: '0px', padding: 1, paddingLeft: 8, paddingRight: 8 }}>{count}</div>
                     <Button style={{ color: 'red', fontSize: 12 }}>Carrinho</Button>
                 </div>

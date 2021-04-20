@@ -6,7 +6,7 @@ import Radio from '@material-ui/core/Radio';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 import { withStyles } from '@material-ui/core/styles';
-import { useCount } from '../context/Count';
+import { useCount, usePop } from '../context/Count';
 
 
 import './Menu.css'
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         padding: 0,
         width: '375px',
         height: '800px',
-        overflow: 'hidden',
+        overflow: 'auto',
         '@media (max-width:500px)': {
             overflow: 'visible',
             width: '520px'
@@ -65,7 +65,6 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     buttons: {
-        width: '89px',
         height: '32px',
         marginLeft: '250px',
         borderRadius: '5px',
@@ -189,6 +188,7 @@ export default function Menu() {
     const [quatro, setQuatro] = useState(0);
     const [qtd, setQtd] = useState(1);
     const { count, setCount } = useCount(0);
+    const { pop, setPop } = usePop(1)
     const classes = useStyles();
 
     const GreenRadio = withStyles({
@@ -206,10 +206,10 @@ export default function Menu() {
                 < div style={{ backgroundColor: 'rgba(253, 215, 14, 0.2)', padding: 12, marginTop: 10 }}>
                     <div className={classes.ingre}>
                         Adicionar Ingredientes
-                        </div>
+                    </div>
                     <div className={classes.ingrePrice}>
                         Até 8 ingredientes
-                     </div>
+                    </div>
                 </div>
                 <div className={classes.optionsType}>
                     <div className={classes.menuTitle}>Queijo Cheddar</div>
@@ -309,7 +309,7 @@ export default function Menu() {
                     <Button onClick={() => setQtd(qtd + 1)}><AddIcon className={classes.iconsRed} /></Button>
                 </div>
                 <div style={{ flex: 1 }}>
-                    <Button className={classes.butAdd} onClick={() => setCount(count + qtd)} >Adicionar</Button>
+                    <Button className={classes.butAdd} onClick={() => setCount(count + qtd) & setPop(1)} >Adicionar</Button>
                 </div>
             </div>
         </Container >
