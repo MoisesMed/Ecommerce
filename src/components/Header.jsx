@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
+        '@media (max-width:350px)': {
+            width: '560px',
+            justifyContent: 'center',
+        }
     },
     logo: {
         display: 'flex',
@@ -29,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     buttons: {
         display: 'flex',
         alignItems: 'center',
+        '@media (max-width:350px)': {
+            display: 'none',
+            width: '0%'
+        }
     },
     button: {
         borderRadius: '4px',
@@ -62,7 +70,7 @@ export default function Header() {
                 <a href="http://localhost:3000/home"><img src={logo_esquerda} /></a>
                 <a href="http://localhost:3000/home"><img src={logo_direita} /></a>
             </div>
-            <div className={classes.buttons}>
+            <div class="root1" className={classes.buttons}>
                 <div className={classes.button}>
                     <Autocomplete
                         className="entrega"

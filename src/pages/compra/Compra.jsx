@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 import hamburguer from '../../components/assets/img/hamburguer.png'
 
 import Menu from '../../components/Menu'
@@ -11,7 +10,10 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         marginTop: '24px',
         marginLeft: '64px',
-        paddingBottom: '10px'
+        paddingBottom: '10px',
+        '@media (max-width:350px)': {
+            marginLeft: '25px',
+        }
     },
     title: {
         fontSize: 28,
@@ -23,7 +25,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 20,
         fontWeight: 400,
         color: '#4E4E4E',
-        margin: '24px 0px'
+        margin: '24px 0px',
+        '@media (max-width:350px)': {
+            fontSize: '22px',
+            fontWeight: 430,
+        }
     },
     price: {
         fontSize: '32px',
@@ -32,10 +38,17 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        marginBottom: 0
+        marginBottom: 0,
+        '@media (max-width:350px)': {
+            fontSize: '22px',
+            fontWeight: 500,
+        }
     },
     img: {
-        marginLeft: 70
+        marginLeft: 70,
+        '@media (max-width:350px)': {
+            marginLeft: 45
+        }
     }
 }));
 
@@ -43,7 +56,7 @@ export default function Produto() {
     const classes = useStyles();
 
     return (
-        <div maxWidth="false" style={{ display: 'flex', marginTop: '28px', marginBottom: '22px' }}>
+        <div class="divMain" maxWidth="false" style={{ display: 'flex', marginTop: '28px', marginBottom: '22px' }}>
             <div className={classes.produto}>
                 <div className={classes.img}>
                     <img src={hamburguer} />

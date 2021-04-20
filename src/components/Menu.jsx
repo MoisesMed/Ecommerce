@@ -24,18 +24,45 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #686868',
         borderRadius: '8px',
         margin: '0px 100px',
+        '@media (max-width:350px)': {
+            border: '0px solid #686868',
+        }
     },
     optionsTitle: {
         padding: 0,
         width: '375px',
         height: '800px',
-        overflow: 'auto'
+        overflow: 'hidden',
+        '@media (max-width:350px)': {
+            overflow: 'visible',
+            width: '520px'
+        }
     },
     optionsType: {
         width: '340px',
         height: '88px',
         borderBottom: '1px solid #E8A634',
         margin: '10px 10px',
+        overflow: 'hidden',
+        '@media (max-width:350px)': {
+            width: '500px'
+        }
+    },
+    ingre: {
+        fontSize: '14px',
+        fontWeight: 500,
+        color: '#4E4E4E',
+        '@media (max-width:350px)': {
+            fontSize: 17
+        }
+    },
+    ingrePrice: {
+        fontSize: '12px',
+        fontWeight: 400,
+        color: '#E49700',
+        '@media (max-width:350px)': {
+            fontSize: 13
+        }
     },
     buttons: {
         width: '89px',
@@ -46,16 +73,35 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
+        '@media (max-width:350px)': {
+            height: "36",
+            width: '95px',
+            marginLeft: 380
+        }
     },
     menuTitle: {
         fontSize: '14px',
         fontWeight: 500,
-        color: '#4E4E4E'
+        color: '#4E4E4E',
+        '@media (max-width:350px)': {
+            fontSize: 17
+        }
     },
     menuPrice: {
         fontSize: '14px',
         fontWeight: 400,
-        color: '#F09035'
+        color: '#F09035',
+        '@media (max-width:350px)': {
+            fontSize: 17
+        }
+    },
+    talher: {
+        fontSize: '14px',
+        fontWeight: 500,
+        color: '#4E4E4E',
+        '@media (max-width:350px)': {
+            fontSize: 17
+        }
     },
     num: {
         marginBottom: 3,
@@ -80,6 +126,11 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         justifyContent: 'center',
         display: 'flex',
+        '@media (max-width:350px)': {
+            height: "36",
+            width: '95px',
+            marginLeft: 380
+        }
     },
     iconsRed: {
         color: '#ED3237'
@@ -90,7 +141,12 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '4px',
         display: 'flex',
         justifyContent: 'space-around',
-        alignItems: 'center'
+        alignItems: 'center',
+        '@media (max-width:350px)': {
+            width: '200px',
+            height: '50px',
+            fontSize: '20px'
+        }
     },
     butAdd: {
         width: '220px',
@@ -99,6 +155,11 @@ const useStyles = makeStyles((theme) => ({
         color: 'white',
         marginLeft: 16,
         fontSize: 14,
+        '@media (max-width:350px)': {
+            width: '300px',
+            height: '50px',
+            fontSize: '16px'
+        }
     },
     butOpt: {
         display: 'flex',
@@ -109,7 +170,10 @@ const useStyles = makeStyles((theme) => ({
         flex: 1,
         fontSize: '16px',
         fontWeight: 400,
-        color: '#4E4E4E'
+        color: '#4E4E4E',
+        '@media (max-width:350px)': {
+            fontSize: 17
+        }
     }
 }));
 
@@ -140,10 +204,10 @@ export default function Menu() {
         <Container className={classes.menu} style={{ marginBottom: 0 }}>
             <div className={classes.optionsTitle}>
                 < div style={{ backgroundColor: 'rgba(253, 215, 14, 0.2)', padding: 12, marginTop: 10 }}>
-                    <div style={{ fontSize: '14px', fontWeight: 500, color: '#4E4E4E' }}>
+                    <div className={classes.ingre}>
                         Adicionar Ingredientes
                         </div>
-                    <div style={{ fontSize: '12px', fontWeight: 400, color: '#E49700' }}>
+                    <div className={classes.ingrePrice}>
                         Até 8 ingredientes
                      </div>
                 </div>
@@ -210,7 +274,7 @@ export default function Menu() {
                     <div className={classes.menuPrice}>+ R$1,50</div>
                 </div>
                 < div style={{ backgroundColor: 'rgba(253, 215, 14, 0.2)', padding: 12, marginTop: 10, marginBottom: 10, height: '60px' }}>
-                    <div style={{ fontSize: '14px', fontWeight: 500, color: '#4E4E4E' }}>
+                    <div className={classes.talher}>
                         Precisa de talher?
                             </div>
                 </div>
@@ -238,7 +302,7 @@ export default function Menu() {
                 </div>
 
             </div>
-            <div style={{ display: 'flex', marginTop: 12, height: '40px', padding: 0, }} >
+            <div style={{ display: 'flex', marginTop: 12, height: '40px', padding: 0 }} >
                 <div className={classes.carBut}>
                     <Button onClick={() => setQtd(qtd - 1)}><RemoveIcon className={classes.iconsRed} /></Button>
                     <div style={{ marginBottom: 3 }} >{qtd}</div>
