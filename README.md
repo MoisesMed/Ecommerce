@@ -14,7 +14,6 @@
     <li>React.JS</li>
     <li>Styled Components</li>
     <li>Material UI</li>
-    <li>Axios</li>
 </ul>
 
 <hr>
