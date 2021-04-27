@@ -19,6 +19,7 @@
 <hr>
 
 <h3>O projeto está disponível em : https://teamsoft.vercel.app/compra </h3>
-![Sem título](https://user-images.githubusercontent.com/43209743/116274526-246d4180-a759-11eb-9b85-98e6f03159b7.png)
+<img src="https://user-images.githubusercontent.com/43209743/116278272-b9be0500-a75c-11eb-8fb9-6502b6e1627b.png" />
 
-<span style="text-align:center;">Desenvoldido por <b>Moisés Medeiros</b>.<span>
+
+<span style="text-align:end;">Desenvoldido por <b>Moisés Medeiros</b>.<span>
